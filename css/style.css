@@ -1,0 +1,107 @@
+*,
+body *{
+    box-sizing: border-box;
+}
+img{
+    max-width:100%;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: #333;
+}
+p, span, a, li, input, textarea, label, select, option, button {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #333;
+}
+
+/* LAYOUT */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.box-25{
+    width: 25%;
+    padding: 0 10px;
+}
+.box-50{
+    width: 50%;
+    padding: 0 10px;
+}
+.box-75{
+    width: 75%;
+    padding: 0 10px;
+}
+.box-100{
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+
+/* CUSTOM CODE */
+nav{
+    display:flex;
+}
+#logo{
+    width:10%;
+}
+#logo a{
+    line-height: 2rem;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:rgba(0,0,0,0.2);
+}
+nav ul#main-nav{
+    width:90%;
+    text-align:right;
+    display:flex;
+    justify-content:end;
+}
+nav ul#main-nav li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+nav ul#main-nav li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding:10px;
+}
+
+header #top-box{
+    padding:200px 0 100px 0;
+    background-image: url(../images/section1.jpg);
+}
+#top-box h1,
+#top-box p{
+    color:white;
+}
+
+
+
+
+#section-1{
+    padding:100px 0;
+}
