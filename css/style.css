@@ -55,9 +55,6 @@ p, span, a, li, input, textarea, label, select, option, button {
 
 
 /* CUSTOM CODE */
-nav{
-    display:flex;
-}
 #logo{
     width:10%;
 }
@@ -90,6 +87,13 @@ nav ul#main-nav li a{
     padding:10px;
 }
 
+nav ul#main-nav li:last-child{
+    margin-right:0;
+}
+nav ul#main-nav li:last-child a{
+    padding-right:0;
+}
+
 header #top-box{
     padding:200px 0 100px 0;
     background-image: url(../images/section1.jpg);
@@ -97,6 +101,23 @@ header #top-box{
 #top-box h1,
 #top-box p{
     color:white;
+}
+article{
+    position:relative;
+    overflow: hidden;
+}
+article span.date{
+    position:absolute;
+    top:-50px;
+    right:20px;
+    padding:5px 10px;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius:4px;
+    transition:0.4s
+}
+article:hover span.date{
+    top:20px;
+    transition:0.4s
 }
 
 
